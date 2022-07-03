@@ -15,7 +15,9 @@ app.use(express.json())
 app.use(cors());
 
 // app.use("/api",routerCategories);
-// app.use("/api",routerBooks);
+app.use("/api", (req,res) =>{
+    res.json("Chạy thành công !");
+});
 // app.use("/api",routerAuth);
 // app.use("/api",routerUsers);
 // app.use("/api",routerContact);
