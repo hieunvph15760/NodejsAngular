@@ -14,16 +14,20 @@ const app = express();
 app.use(express.json())
 app.use(cors());
 
-app.use("/api",routerCategories);
-app.use("/api",routerBooks);
-app.use("/api",routerAuth);
-app.use("/api",routerUsers);
-app.use("/api",routerContact);
-app.use("/api",routerOrder);
-app.use("/api",routerOrderDetails);
+// app.use("/api",routerCategories);
+// app.use("/api",routerBooks);
+// app.use("/api",routerAuth);
+// app.use("/api",routerUsers);
+// app.use("/api",routerContact);
+// app.use("/api",routerOrder);
+// app.use("/api",routerOrderDetails);
 
-mongoose.connect("mongodb://localhost:27017/web208")
-    .then(()=> console.log("Ket noi db thanh cong !"))
+app.use("/api",(req,res)=>{
+    console.log("hello");
+})
+
+// mongoose.connect("mongodb://localhost:27017/web208")
+//     .then(()=> console.log("Ket noi db thanh cong !"))
 
 
 const PORT = 3001
