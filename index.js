@@ -15,14 +15,22 @@ app.use(express.json())
 app.use(cors());
 
 // app.use("/api",routerCategories);
-app.use("/api", (req,res) =>{
-    res.json("Chạy thành công !");
-});
-// app.use("/api",routerAuth);
+// app.use("/api",routerBooks);
 // app.use("/api",routerUsers);
 // app.use("/api",routerContact);
 // app.use("/api",routerOrder);
 // app.use("/api",routerOrderDetails);
+
+app.use("/api", async (req,res) =>{
+    try {
+        const book = await BooksSchema.find({}).exec();
+        res.json(book);
+    } catch (error) {
+        return res.status(400).json({
+            message:"Không lấy được sách !"
+        })
+    }
+});
 
 mongoose.connect("mongodb://localhost:27017/web208")
     .then(()=> console.log("Ket noi db thanh cong !"))
