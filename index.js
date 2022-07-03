@@ -1,13 +1,13 @@
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
-import routerCategories from "./routes/categories";
-import routerBooks from "./routes/books";
-import routerAuth from "./routes/auth";
-import routerUsers from "./routes/users";
-import routerContact from "./routes/contact";
-import routerOrder from "./routes/order";
-import routerOrderDetails from "./routes/orderDetails";
+import routerCategories from "./src/routes/categories";
+import routerBooks from "./src/routes/books";
+import routerAuth from "./src/routes/auth";
+import routerUsers from "./src/routes/users";
+import routerContact from "./src/routes/contact";
+import routerOrder from "./src/routes/order";
+import routerOrderDetails from "./src/routes/orderDetails";
 
 const app = express();
 
