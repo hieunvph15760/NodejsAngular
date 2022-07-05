@@ -21,6 +21,7 @@ app.use("/api",routerUsers);
 app.use("/api",routerContact);
 app.use("/api",routerOrder);
 app.use("/api",routerOrderDetails);
+app.use("/api",routerAuth);
 
 mongoose.connect("mongodb+srv://hieuuchiha:ahieu2k2@cluster0.ojan8xk.mongodb.net/project0")
     .then(()=> console.log("Ket noi db thanh cong !"))
