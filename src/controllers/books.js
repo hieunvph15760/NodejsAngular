@@ -1,4 +1,4 @@
-import BooksSchema from "../modules/books";
+import BooksSchema from "../modules/books.js";
 
 export const create = async (req,res) =>{
     try {

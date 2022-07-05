@@ -1,4 +1,4 @@
-import OrderDetailsSchema from "../modules/orderDetails";
+import OrderDetailsSchema from "../modules/orderDetails.js";
 
 export const createOderDetails = async (req,res) =>{
     try {

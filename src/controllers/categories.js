@@ -1,5 +1,5 @@
-import CategoriesSchema from "../modules/categories";
-import BooksSchema from "../modules/books"
+import CategoriesSchema from "../modules/categories.js";
+import BooksSchema from "../modules/books.js"
 
 export const create = async (req,res) =>{
     try {

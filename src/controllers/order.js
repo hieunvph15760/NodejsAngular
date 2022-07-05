@@ -1,5 +1,5 @@
-import OrderChema from "../modules/order";
-import OrderDetails from "../modules/orderDetails";
+import OrderChema from "../modules/order.js";
+import OrderDetails from "../modules/orderDetails.js";
 
 export const createOrder = async (req,res) =>{
     try {

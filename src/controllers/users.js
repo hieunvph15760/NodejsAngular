@@ -1,4 +1,4 @@
-import UsersChema from "../modules/users";
+import UsersChema from "../modules/users.js";
 
 export const getAllUser = async (req,res) =>{
     try {
