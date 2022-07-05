@@ -23,7 +23,7 @@ app.use("/api",routerOrder);
 app.use("/api",routerOrderDetails);
 app.use("/api",routerAuth);
 
-mongoose.connect("mongodb+srv://hieuuchiha:ahieu2k2@cluster0.ojan8xk.mongodb.net/project0")
+mongoose.connect("mongodb+srv://hieuuchiha:ahieu2k2@cluster0.adz6js0.mongodb.net/bookstore")
     .then(()=> console.log("Ket noi db thanh cong !"))
 
 
