@@ -3,8 +3,8 @@ import { create, getBook, list, litmitBooks, pagination, remove, searchBooks, up
 
 const router = Router();
 
-router.post("/books",create)
 router.get("/books",list)
+router.post("/books",create)
 router.get("/booksPagination/:page",pagination)
 router.get("/books/:id",getBook)
 router.delete("/books/:id",remove)
