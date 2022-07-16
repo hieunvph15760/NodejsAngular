@@ -23,7 +23,7 @@ app.use("/api",routerOrder);
 app.use("/api",routerOrderDetails);
 app.use("/api",routerAuth);
 
-mongoose.connect("mongodb+srv://hieuuchiha:ahieu2k2@cluster0.shq1aco.mongodb.net/Bookstore")
+mongoose.connect("mongodb+srv://hieuuchiha:ahieu2k2@cluster0.fycl4wy.mongodb.net/Cosmetic")
     .then(()=> console.log("Ket noi db thanh cong !"))
 
 const PORT = 3001

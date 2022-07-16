@@ -31,6 +31,6 @@ const BooksSchema = mongoose.Schema({
     }
 },{timestamps: true})
 BooksSchema.index({name:"text"});
-const books = mongoose.model("book",BooksSchema);
+const books = mongoose.model("books",BooksSchema);
 books.createIndexes({name:"text"});
 export default books
